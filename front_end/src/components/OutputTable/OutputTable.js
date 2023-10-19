@@ -40,22 +40,24 @@ function OutputTable({ data }) {
         ))}
       </TableBody>
     </Table>
-    <Grid style={{ marginBottom: '16px' }} xs={12}>
-      <CSVLink
-        data={data[0]}
-        filename='transactions.csv'
-        className='hidden'
-        ref={csvLink}
-        // I also tried adding the onClick event on the link itself
-        target="_blank"
-      >
-        <Button
-          className="download-button" variant="contained" color="primary" onClick={onDownload}
-        >
-          Download Results
-        </Button>
-      </CSVLink>
-    </Grid>
+    {data[0].length ? 
+      <Grid style={{ marginBottom: '16px' }} xs={12}>
+        <CSVLink
+          data={data[0]}
+          filename='transactions.csv'
+          className='hidden'
+          ref={csvLink}
+          // I also tried adding the onClick event on the link itself
+          target="_blank"
+        >          
+          <Button
+            className="download-button" variant="contained" color="primary" onClick={onDownload}
+          >
+            Download Results
+          </Button>
+        </CSVLink>
+      </Grid> : null
+    }
 
   </div>
   );

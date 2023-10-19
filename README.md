@@ -1,7 +1,7 @@
 
-# Zero Test
+# Zero Test 
 
-Generate column mapping suggestions and Python Script between two CSVs using OpenAI's LLM.
+Generate column mapping suggestions and Python Script between two CSVs using OpenAI's LLM.  
 
 
 
@@ -29,7 +29,7 @@ Generate column mapping suggestions and Python Script between two CSVs using Ope
 | `suggestion` | `string` | **Optional**. user edited suggestion |
 
 
-#### Post the Code and relative file for mapping the colums
+#### Post the Code and relative file for mapping the colums 
 
 ```http
   POST /column_mapper/
@@ -49,8 +49,9 @@ To run this project, you will need to add the following environment variable to 
 
 
 
-
 ## Run Locally
+
+#### Backend Setup
 
 Clone the project
 
@@ -61,7 +62,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd backend
+  cd zero_app
 ```
 
 Install dependencies
@@ -76,7 +77,48 @@ Start the server
   uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
+#### Frontend Setup
 
-# Approach For Training LLM on Synthetic Data
+Go to project directory
 
-Keeping in mind to Train LLM in Future
+```bash
+  cd zero-app
+```
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+## App flow
+
+- Choose input file and Template file
+- Click on "UPLOAD FILES" button and it will fetch "Suggestions" and "Python Script" data
+- You can update suggestions and python script
+- Yoy can MAP the code and see the results
+- Click on "DOWNLOAD RESULTS" to download csv file of the output data.
+## Screenshots
+
+![App Screenshot](/screen shoots/s1.png)
+
+![App Screenshot](/screen shoots/S1.png)
+
+
+## Future Work (Approach For Training LLM Using Synthetic Data)
+
+In anticipation of harnessing the full potential of the LLM for the business-spacific tasks in the future, I have adopted an approach by storing synthetic data produced by the LLM in conjunction with the prompts or queries issued to it. This is being systematically stored in integrated database. 
+
+No doubt, LLMs are great at handling a wide range of topics,but LLMs might not always be perfect for business specific tasks. There is a need of Surpvised Training of LLM for business specific tasks.
+
+To do this without increasing costs or needing more people, I have come up with a smart method. I am carefully saving the prompt and its answers by LLM. Think of it like collecting a dataset of specific business-related tasks. With this approach, every prompt and response is like a training lesson, for LLM and the best part is, I am generating and saving synthetic data without extra work and involvement of Human resources i.e Data Annotators.
+
+The big picture is simple: When I have enough of these saved conversations, I can use them to better train the LLM. I want it to really understand the specific business needs. By training the LLM with this data, the LLM will not just have general knowledge but will be better at helping in unique business situation.
+
+In conclusion, by combining the LLM's broad knowledge with my collected data, I am aiming to create a tool that is not only advanced but also perfectly suited to specific business needs and how I operate.
+
+If I had more time, I would have added a Feedback loop in my app.  
