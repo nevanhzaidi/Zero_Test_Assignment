@@ -50,19 +50,22 @@ To run this project, you will need to add the following environment variable to 
 
 
 ## Run Locally
-
-#### Backend Setup
-
 Clone the project
 
 ```bash
   git clone https://github.com/usmanasif/Zero_Test_Assignment.git
 ```
-
 Go to the project directory
 
 ```bash
-  cd zero_app
+  cd Zero_Test_Assignment
+```
+#### Backend Setup
+
+Go to the backend directory
+
+```bash
+  cd backend
 ```
 
 Install dependencies
@@ -79,10 +82,10 @@ Start the server
 
 #### Frontend Setup
 
-Go to project directory
+Go to frontend directory
 
 ```bash
-  cd zero-app
+  cd front_end
 ```
 Install dependencies
 
@@ -104,9 +107,9 @@ Start the server
 - Click on "DOWNLOAD RESULTS" to download csv file of the output data.
 ## Screenshots
 
-![App Screenshot](/screen shoots/s1.png)
+![App Screenshot](https://github.com/usmanasif/Zero_Test_Assignment/blob/7ff457921ba293f46b10b03a5491236baca06083/screen%20shoots/s1.png)
 
-![App Screenshot](/screen shoots/S1.png)
+![App Screenshot](https://github.com/usmanasif/Zero_Test_Assignment/blob/7ff457921ba293f46b10b03a5491236baca06083/screen%20shoots/S2.png)
 
 
 ## Future Work (Approach For Training LLM Using Synthetic Data)
