@@ -24,6 +24,9 @@ app.add_middleware(
 
 mapper = ColumnMapper()  # Create instance of ColumnMapper
 
+@app.get("/")
+async def home():
+    return JSONResponse(content={"Message": "Backend is running"}, status_code=200)
 
 @app.post("/suggest_column_mapping/")
 async def column_suggestions(input_table: UploadFile = File(...),
