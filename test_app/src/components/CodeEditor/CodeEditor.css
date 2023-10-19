@@ -1,0 +1,28 @@
+.code-editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.code-editor-container .MuiButton-root {
+    align-self: flex-start;
+    background-color: #7289DA;
+    color: #FFFFFF;
+}
+
+.code-editor-container .MuiOutlinedInput-root {
+    background-color: #2C2F33;
+    color: #d4d4d4;
+}
+
+.code-editor-container .MuiOutlinedInput-notchedOutline {
+    border-color: #4A4D52;
+}
+
+.code-editor-container .MuiOutlinedInput-root::placeholder {
+    color: #858585;
+}
+
+.code-editor-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #7289DA;
+}
