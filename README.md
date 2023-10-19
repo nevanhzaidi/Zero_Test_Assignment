@@ -1,5 +1,5 @@
 
-# Zero Test 
+# Zero Test
 
 Generate column mapping suggestions and Python Script between two CSVs using OpenAI's LLM.
 
@@ -29,7 +29,7 @@ Generate column mapping suggestions and Python Script between two CSVs using Ope
 | `suggestion` | `string` | **Optional**. user edited suggestion |
 
 
-#### Post the Code and relative file for mapping the colums 
+#### Post the Code and relative file for mapping the colums
 
 ```http
   POST /column_mapper/
@@ -61,7 +61,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd zero_app
+  cd backend
 ```
 
 Install dependencies
