@@ -7,7 +7,7 @@ Generate column mapping suggestions and Python Script between two CSVs using Ope
 
 ## Features
 
-- Generate Column Mapping Suggestion and Python Script using OpenAI's LLM
+- Generate Column Mapping Suggestions and Python Script using OpenAI's LLM
 - Can Edit Suggestion and Code Script
 - Can Run the Script and See Results
 
@@ -103,7 +103,7 @@ Start the server
 - Choose input file and Template file
 - Click on "UPLOAD FILES" button and it will fetch "Suggestions" and "Python Script" data
 - You can update suggestions and python script
-- Yoy can MAP the code and see the results
+- You can MAP the code and see the results
 - Click on "DOWNLOAD RESULTS" to download csv file of the output data.
 ## Screenshots
 
