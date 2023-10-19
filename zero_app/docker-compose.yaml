@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    image: 009356742988.dkr.ecr.us-east-1.amazonaws.com/zero-test:latest
+    ports:
+      - "80:8000"
+    volumes:
+      - data-volume:/app/data
+
+volumes:
+  data-volume:
