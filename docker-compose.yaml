@@ -4,9 +4,13 @@ services:
   web:
     image: 009356742988.dkr.ecr.us-east-1.amazonaws.com/zero-test:latest
     ports:
-      - "80:8000"
+      - "8000:8000"
     volumes:
       - data-volume:/app/data
+  frontend:
+    image: 009356742988.dkr.ecr.us-east-1.amazonaws.com/zero-test-frontend:latest
+    ports:
+      - "80:80"
 
 volumes:
   data-volume:
