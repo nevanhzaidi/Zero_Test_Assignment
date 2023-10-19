@@ -1,0 +1,15 @@
+.output-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.output-table-container .MuiTable-root {
+    min-width: 650px;
+}
+
+.download-button {
+    display: flex;
+    width: 300px;
+}
